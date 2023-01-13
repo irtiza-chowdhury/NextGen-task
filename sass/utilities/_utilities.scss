@@ -1,0 +1,50 @@
+
+@mixin attendance-button {
+    border: none;
+    background: $sidebar-color;
+    font-size: 16.16px;
+    font-weight: 600;
+    line-height: 24.23px;
+    padding: 13px 26px;
+    color: $white;
+    border-radius: 8.07781px;;
+    box-shadow: 0px 12.1167px 24.2334px rgba(1, 11, 253, 0.12);
+
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+    
+}
+@mixin card-button{
+    border: none;
+    background: $sidebar-color;
+    color: $white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 10.98px;
+    padding: 7px 21px;
+    border-radius: 10px;;
+    // box-shadow: 0px 12.1167px 24.2334px rgba(1, 11, 253, 0.12);
+
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}
+@mixin dashboard-table-button{
+    border: none;
+    background: $sidebar-color;
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0px 12.1167px 24.2334px rgba(1, 11, 253, 0.12);
+
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}

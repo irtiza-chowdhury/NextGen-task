@@ -1,0 +1,41 @@
+@mixin primary-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $primary-heading-color;
+    font-style: normal;
+    @media (max-width:847.98px){
+        font-size: 36px;
+    }
+}
+@mixin secondary-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 32.94px;
+    color: $black;
+    font-style: normal;
+    @media (max-width:847.98px){
+        font-size: 32px;
+    }
+}
+@mixin sidebar-primary-pargraph {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: $white;
+    font-style: normal;
+}
+@mixin sidebar-primary-pargraph {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $white;
+    font-style: normal;
+}
+@mixin sidebar-small-pargraph {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white;
+    font-style: normal;
+}

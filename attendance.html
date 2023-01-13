@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextgen Ltd. Attendance</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/3a8a85fbc3.js" crossorigin="anonymous"></script>
+
+    <!-- bootrstrap css -->
+    <link rel="stylesheet" href="assets/boostrap_css/bootstrap.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="fullBody">
+        <!-- side bar start -->
+        <div class="sideBar-wraper d-none d-md-block">
+            <div class="sideBar">
+                <div class="sideBar_logo">
+                    <img src="assets/image/nextgen.png" alt="Nextgen Ltd.">
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text"><a href="./index.html">Dashboard</a> </div> 
+                </div>
+                <div class="sideBar_title-active">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text"><a href="./attendance.html">Attendence</a></div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Employees</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Leaves</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Expense</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Department</div> 
+                </div>
+                <div class="sideBar_title-setting">
+                    <div class="sideBar_title-setting-image">
+                        <img src="assets/image/GearSix-white.png" alt="GearSix-white">
+                    </div>
+                     
+                    <div class="btn-group sideBar_title-setting-text">
+                        <button type="button" class="btn dropdown-toggle sideBar_title-setting-text-button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Setting
+                        </button>
+                        <ul class="dropdown-menu sideBar_title-setting-text-menu">
+                          <li class="sideBar_title-setting-text-menu-item">Approval</li>
+                          <li class="sideBar_title-setting-text-menu-item">Leave</li>
+                          <li class="sideBar_title-setting-text-menu-item">Office Settings</li>
+                          <li class="sideBar_title-setting-text-menu-item">My subscription</li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="sideBar_title-logout">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/log-out.png" alt="log-out">
+                    </div>
+                    <div class="sideBar_title-text">Logout</div> 
+                </div>
+    
+            </div>
+        </div>
+        <!-- side bar end -->
+        
+        <!-- offcanvas start -->
+
+        <button class="btn offcanvas_button d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-start offcanvas_body" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title " id="offcanvasExampleLabel"><img class="offcanvas_body-title" src="assets/image/nextgen.png" alt="Nextgen Ltd."></h5>
+                <button type="button " class="btn-close offcanvas_body-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sideBar">
+                <div class="sideBar_logo">
+                    
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text"><a href="./index.html">Dashboard</a> </div> 
+                </div>
+                <div class="sideBar_title-active">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text"><a href="./attendance.html">Attendence</a></div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Employees</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Leaves</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Expense</div> 
+                </div>
+                <div class="sideBar_title">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/dashboard.png" alt="dashboard">
+                    </div>
+                    <div class="sideBar_title-text">Department</div> 
+                </div>
+                <div class="sideBar_title-setting">
+                    <div class="sideBar_title-setting-image">
+                        <img src="assets/image/GearSix-white.png" alt="GearSix-white">
+                    </div>
+                        
+                    <div class="btn-group sideBar_title-setting-text">
+                        <button type="button" class="btn dropdown-toggle sideBar_title-setting-text-button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Setting
+                        </button>
+                        <ul class="dropdown-menu sideBar_title-setting-text-menu">
+                            <li class="sideBar_title-setting-text-menu-item">Approval</li>
+                            <li class="sideBar_title-setting-text-menu-item">Leave</li>
+                            <li class="sideBar_title-setting-text-menu-item">Office Settings</li>
+                            <li class="sideBar_title-setting-text-menu-item">My subscription</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="sideBar_title-logout">
+                    <div class="sideBar_title-image">
+                        <img src="assets/image/log-out.png" alt="log-out">
+                    </div>
+                    <div class="sideBar_title-text">Logout</div> 
+                </div>
+    
+            </div>
+                </div>
+            </div>
+            </div>
+
+        <!-- offcanvas end -->
+
+        <!-- mainBody start -->
+        <div class="mainBody">
+        <!-- upperPart start-->
+        <div class="upperPart">
+            <div class="upperPart_search">
+                <input class="upperPart_search-input" type="text" placeholder="search">
+                <span class="upperPart_search-magnifyingGlass">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                </span>             
+            </div>
+            <div class="upperPart_info">
+                <div class="upperPart_info-union">
+                    <img src="assets/image/Union.png" alt="Union">
+                </div>
+                <div class="upperPart_info-notification">
+                    <img src="assets/image/notification.png" alt="notification">
+                </div>
+                <div class="upperPart_info-user">
+                    <img src="assets/image/user.png" alt="user">
+                </div>
+            </div>
+        </div>
+         <!-- upperPart end-->
+
+        <!-- attendence start -->
+        <div class="attendance">
+            <!-- attendance_heading start-->
+            <div class="attendance_heading">
+                <div class="attendance_heading-title">Attendance</div>
+                <div class="attendance_heading-item">
+                    <div class="attendance_heading-item-report">
+                        <button class="attendance_heading-item-report-button" type="button">Download Report</button>
+                    </div>
+                    <div class="attendance_heading-item-icon">
+                        <img src="assets/image/GearSix.png" alt="Settings">
+                    </div>
+                </div>
+            </div>
+            <!-- attendance_heading end-->
+
+            <!-- attendence options start -->
+            <div class="attendance_options">
+                <div class="container">
+                    <div class="attendance_options-content">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Jan 03, 2023</div>
+                                    <div class="attendance_options-content-card-icon">
+                                        <img src="assets/image/Union.png" alt="Union">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Department</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Attendance</div>
+                                    <div class="attendance_options-content-card-icon-arrow">
+                                        <img src="assets/image/arrow-low.png" alt="arrow-low">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Present</div>
+                                    <div class="attendance_options-content-card-icon-arrow">
+                                        <img src="assets/image/arrow-low.png" alt="arrow-low">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Check In</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Location</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Designation</div>
+                                    <div class="attendance_options-content-card-icon-arrow">
+                                        <img src="assets/image/arrow-low.png" alt="arrow-low">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
+                                <div class="attendance_options-content-card">
+                                    <div class="attendance_options-content-card-text">Department</div>
+                                    <div class="attendance_options-content-card-icon-arrow">
+                                        <img src="assets/image/arrow-low.png" alt="arrow-low">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- attendence options end -->
+
+            <!-- attendance table start -->
+            <div class="attendance_table">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                <div class="attendance_table-content-title-icon"><i class="fa-regular fa-square"></i></div>
+                                <div class="attendance_table-content-title-text">Employee Name</div>
+                                
+                            </div>
+                            <div class="attendance_table-content-item">Jahid Hasan</div>
+                            <div class="attendance_table-content-item"><div class="attendance_table-content-item-icon"><i class="fa-solid fa-square-check"></i></div>
+                            <div class="attendance_table-content-item-text">Jahid Hasan</div> </div>
+                            <div class="attendance_table-content-item">Jahid Hasan</div>
+                            <div class="attendance_table-content-item">
+                                <div class="attendance_table-content-item-icon"><i class="fa-regular fa-square"></i></div>
+                                <div class="attendance_table-content-item-text">Jahid Hasan</div> 
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Department
+                            </div>
+                            <div class="attendance_table-content-item">HR & Admin</div>
+                            <div class="attendance_table-content-item">HR & Admin</div>
+                            <div class="attendance_table-content-item">HR & Admin</div>
+                            <div class="attendance_table-content-item">HR & Admin</div>
+                            
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Check In
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-green">09:30am</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-red">10:30am</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-green">09:45am</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-red">10:45am</button>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Check Out
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-green">06:05pm</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-red">05:30pm</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-green">06:30pm</button>
+                            </div>
+                            <div class="attendance_table-content-item-button">
+                                <button class="attendance_table-content-item-button-red">05:45pm</button>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-1 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Remarks
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-doc">
+                                <img src="assets/image/FileDoc.png" alt="file doc">
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-doc">
+                                <img src="assets/image/FileDoc.png" alt="file doc">
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-1 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Hours
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-1 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Overtime
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                            <div class="attendance_table-content-item-blank">
+                                
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-1 attendance_table-content">
+                            <div class="attendance_table-content-title">
+                                Action
+                            </div>
+                            <div class="attendance_table-content-item-eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="attendance_table-content-item-eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="attendance_table-content-item-eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="attendance_table-content-item-eye">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <span class="pagination_arrowLeft"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="pagination_content-active">1</span>
+                    <span class="pagination_content">2</span>
+                    <span class="pagination_content">3</span>
+                    <span class="pagination_content">4</span>
+                    <span class="pagination_content">5</span>
+                    <span class="pagination_arrowRight"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </div>
+            <!-- attendance table end -->
+        </div>
+        <!-- attendence start -->
+        </div>
+        <!-- mainBody end -->
+
+    </div>
+    
+
+    <!-- bootstrap js -->
+    <script src="assets/boostrap_js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

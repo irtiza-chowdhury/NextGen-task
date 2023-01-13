@@ -1,0 +1,200 @@
+.attendance{
+    &_heading{
+        margin-top: 60px;
+        font-family: Poppins;
+        @include flexbetween;
+        padding: 0 20px 0 40px;
+        @media (max-width:970.98px){
+            display: block;
+        }
+        &-title{
+            @include primary-heading;
+            color: $primary-heading-color;
+        }
+        &-item{
+            @include flexbetween;
+            gap: 20px;
+            @media (max-width:970.98px){
+                justify-content: left;
+                
+            }
+            &-report{
+                &-button{
+                    @include attendance-button;
+                    white-space: nowrap;
+                }
+            }
+            &-icon{
+                width: 46px;
+                height: 46px;
+                @media (max-width:400.98px){
+                    width: 23px;
+                    height: 23px;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &_options{
+        margin-top: 60px;
+        &-content{
+            &-card{
+                @include flexbetween;
+                background-color: $white;
+                padding: 24px 23px;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                gap: 10px;
+                height: 100%;
+                @media (max-width:575.98px){
+                    width: 285px;
+                }
+                &-text{
+                    font-family: Poppins;
+                    font-size: 16.1556px;
+                    line-height: 24px;
+                    color: $primary-paragraph-color;
+                }
+                &-icon{
+                    height: 21px;
+                    width: 20px;
+                    color: $table-title-icon-color;
+                    @include flexcenter;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                    &-arrow{
+                        height: 5px;
+                        width: 10px;
+                        @include flexcenter;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_table{
+        margin-top: 40px;
+        background-color: $white;
+        padding: 10px;
+        font-family: Inter;
+        position: relative;
+        &-content{
+            position: relative;
+            margin-top: 20px;
+            &::after{
+                position: absolute;
+                top: 20px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                content: '';
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+            &-title{
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                color: $table-title-icon-color;
+                margin-bottom: 20px;
+                position: relative;
+                white-space: nowrap;
+                &-icon{
+                    position: absolute;
+                    left: -15px;
+                    top: 2px;
+                }
+            }
+            &-item{
+                position: relative;
+                color: $secondary-pargraph-color;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                padding: 5px 0;
+                &-icon{
+                    position: absolute;
+                    left: -15px;
+                    top: 5px;
+                }
+                &-button{
+                    padding: 2px 0;
+                    &-green{
+                        background-color: $light-green;
+                        border-radius: 18px;
+                        padding: 0 6px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 400;
+                        font-family: Poppins;
+                        border: none;
+                        color: $white;
+                    }
+                    &-red{
+                        background-color: $orange;
+                        border-radius: 18px;
+                        padding: 0 6px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        font-weight: 400;
+                        font-family: Poppins;
+                        border: none;
+                        color: $white;
+                    }
+                }
+                &-doc{
+                    padding-top: 30px;
+                }
+                &-eye{
+                    color: $sidebar-color;
+                    padding: 2px 0;
+                }
+            }
+        }
+        .pagination{
+            margin-top: 70px;
+            @include flexright;
+            padding-bottom: 40px;
+            &_arrowLeft{
+                margin-right: 10px;
+                font-size: 12px;
+                padding: 4px 0;
+                color: $secondary-pargraph-color;
+            }
+            &_content{
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                font-family: Inter;
+                padding: 4px 8px;
+                color: $secondary-pargraph-color;
+                cursor: pointer;
+                &-active{
+                    margin: 0 10px;
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    font-family: Inter;
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    color: $secondary-pargraph-color;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    cursor: pointer;
+                }
+            }
+            &_arrowRight{
+                padding: 4px 0;
+                font-size: 12px;
+                margin-left: 10px;
+                color: $secondary-pargraph-color;
+            }
+        }
+    }
+}
